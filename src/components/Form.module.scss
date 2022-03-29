@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  padding: 20px;
+  box-shadow: #634d4d33 0px 2px 8px 0px;
+  height: auto;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.titleForm {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 0;
+  box-shadow: rgb(99 99 99 / 17%) 0px 0px 3px 0px;
+}
+
+.submit {
+  margin-top: 70px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #81c784;
+  border: none;
+  color: #1b5e20;
+  cursor: pointer;
+}
+
+
+.formBox {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialLink {
+  display: flex;
+}
+
+.socialLink a {
+  height: 22px;
+  padding: 0 10px;
+}
+
+.socialLink a:hover i {
+  color: #717477;
+}
+
+i {
+  font-size: 21px;
+  color: #263238;
+  transition: 0.3s;
+}
+
+.social {
+  width: 100%;
+  padding: 10px;
+  box-shadow: rgb(13 71 161 / 20%) 0px 2px 8px 0px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gmail {
+  margin: 0 10px 0 0;
+  text-decoration: none;
+  color: #263238;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1520px) {
+  .formBox {
+    width: 280px !important;
+  }
+
+  .socialLink a {
+    height: 17px;
+    i {
+      font-size: 14px;
+    }
+  }
+
+  .social {
+    a {
+      font-size: 13px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .formBox {
+    width: 100% !important;
+  }
+  
+  .social {
+    // margin: 10px 0;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+
+  .socialLink a {
+    height: 13px;
+    i {
+      font-size: 10px;
+    }
+  }
+
+  .social {
+    a {
+      font-size: 9px;
+    }
+  }
+}

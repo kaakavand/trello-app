@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "iransans";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #E7EBEA 0%, #E0E6E6 100%);
+}
+
+.main {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 30px;
+  border-radius: 5px;
+  height: 700px;
+  background-color: #fefefe;
+  justify-content: center;
+}
+
+.task {
+  width: 340px;
+  margin-left: 20px;
+  padding: 20px;
+  box-shadow: rgba(#0d47a1, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+.doing {
+  width: 340px;
+  margin-left: 20px;
+  padding: 20px;
+  box-shadow: rgba(#f57f17, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+.done {
+  width: 340px;
+  margin-left: 20px;
+  padding: 20px;
+  box-shadow: rgba(#2e7d32, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+
+.bgBlue {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  list-style: none;
+  padding: 5px;
+  background: #e3f2fd;
+  margin: 10px 0px;
+}
+
+.bgYellow {
+  list-style: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  padding: 5px;
+  background: #fffde7;
+  margin: 10px 0px;
+}
+
+.bgGreen {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  list-style: none;
+  padding: 5px;
+  background: #d3f1d6;
+  margin: 10px 0px;
+}
+
+.pTitle {
+  font-size: 16px;
+  color: #263238;
+  font-weight: bold;
+}
+
+.pDescription {
+  word-wrap: break-word;
+  font-size: 11px;
+  color: #3e515a;
+  font-weight: bold;
+}
+
+.pDate {
+  word-wrap: break-word;
+  font-size: 13px;
+  color: #3e515a;
+  font-weight: bold;
+}
+
+.nextInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.doneBtn {
+  width: auto;
+}
+
+.end , .end2{
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  border: none;
+  background: #ffcdd2;
+  color: #f44336;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.end2 {
+  display: none;
+  background-image: './assets/img/trash-can.png';
+}
+
+.nex , .nex2 {
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  border: none;
+  background: #c8e6c9;
+  color: #4caf50;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.nex2 {
+  display: none;
+}
+
+.trash {
+  font-size: 12px;
+  margin-top: 5px;
+  display: inline-block;
+  color: #ef8178;
+  pointer-events:painted;
+}
+
+.checkTick {
+  font-size: 12px;
+  margin-top: 5px;
+  display: inline-block;
+  color: #4caf50;
+  pointer-events:painted;
+}
